@@ -1,6 +1,7 @@
 import { useState } from "react";
 import hachacTeam from "../assets/gallery-pics/team.jpg"
 import children from "../assets/gallery-pics/youth.jpg"
+import items from "../assets/gallery-pics/event.jpg"
 
 interface GalleryItem {
   id: number;
@@ -36,8 +37,8 @@ const gallery: GalleryItem[] = [
   },
   {
     id: 5,
-    image: "https://images.unsplash.com/photo-1504703395950-b89145a5425b?w=800&q=80",
-    caption: "Community Harvest Festival",
+    image: items,
+    caption: "ABB Sponsorship",
     span: "normal",
   },
   {

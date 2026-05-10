@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function ContactFooter() {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
-  const [focused, setFocused] = useState<string | null>(null);
+  // const [focused, setFocused] = useState<string | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -572,7 +572,7 @@ export default function ContactFooter() {
                 <div className="contact-info-icon">📍</div>
                 <div className="contact-info-text">
                   <p>Address</p>
-                  <p>Johannesburg, South Africa, Soweto</p>
+                  <p>Soweto, Jabavu Skills Center, 313 Diokane Street</p>
                 </div>
               </div>
               <div className="contact-info-row">
@@ -594,7 +594,7 @@ export default function ContactFooter() {
             {/* Map embed — replace src with your Google Maps embed URL */}
             <div className="contact-map">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57420.07612823338!2d28.00339195!3d-26.2041028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c68f0406a51%3A0x238ac9d9b1d34041!2sJohannesburg%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1699000000000"
+                src="https://www.google.com/maps?q=Jabavu+Skills+Center,+313+Diokane+Street&output=embed"
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -632,7 +632,7 @@ export default function ContactFooter() {
                       className="form-input"
                       name="name"
                       type="text"
-                      placeholder="Jane Doe"
+                      placeholder="Name"
                       value={form.name}
                       onChange={handleChange}
                     />
