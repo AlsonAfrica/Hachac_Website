@@ -503,7 +503,7 @@ export default function EventsSection() {
             return (
               <div
                 key={event.id}
-                className="event-card"
+                className={`event-card ${hovered === event.id ? "active" : ""}`}
                 style={{ borderRadius: radius }}
                 onMouseEnter={() => setHovered(event.id)}
                 onMouseLeave={() => setHovered(null)}
