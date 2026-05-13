@@ -107,7 +107,7 @@ const categoryColors: Record<string, string> = {
 
 export default function EventsSection() {
   const [filter, setFilter] = useState("All");
-  const [hovered, setHovered] = useState<number | null>(null);
+  const [setHovered] = useState<number | null>(null);
 
   const filtered = filter === "All" ? events : events.filter((e) => e.category === filter);
 
