@@ -2,6 +2,11 @@ import { useState } from "react";
 import hachacTeam from "../assets/gallery-pics/team.jpg"
 import children from "../assets/gallery-pics/youth.jpg"
 import items from "../assets/gallery-pics/event.jpg"
+import winners from "../assets/gallery-pics/pitchdaywinners.jpeg"
+import meetup from "../assets/gallery-pics/hashteam.jpeg";
+import HachacFamily from "../assets/gallery-pics/family.jpeg"
+import radebepartnership from "../assets/gallery-pics/partnership.jpeg"
+import youthday from "../assets/gallery-pics/youthengagement.jpeg"
 
 interface GalleryItem {
   id: number;
@@ -19,14 +24,14 @@ const gallery: GalleryItem[] = [
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=800&q=80",
-    caption: "Girls in STEM Workshop",
+    image: meetup,
+    caption: "Code Space Meetup",
     span: "normal",
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80",
-    caption: "Tech for Good Hackathon",
+    image: winners,
+    caption: "Pitch Day Winners",
     span: "normal",
   },
   {
@@ -43,20 +48,20 @@ const gallery: GalleryItem[] = [
   },
   {
     id: 6,
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80",
-    caption: "Sponsorship Awards Ceremony",
+    image: radebepartnership,
+    caption: "Sports Day",
     span: "tall",
   },
   {
     id: 7,
-    image: "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=800&q=80",
-    caption: "Annual Partners Dinner",
+    image: youthday,
+    caption: "Youth Day",
     span: "normal",
   },
   {
     id: 8,
-    image: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=800&q=80",
-    caption: "Leadership Academy Graduation",
+    image: HachacFamily,
+    caption: "Hachac Family",
     span: "wide",
   },
 ];
