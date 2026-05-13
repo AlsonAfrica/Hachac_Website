@@ -776,11 +776,11 @@ export default function ContactFooter() {
             ))}
           </div>
 
-          <div className="footer-policy-links">
+          {/* <div className="footer-policy-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Use</a>
             <a href="#">Cookie Settings</a>
-          </div>
+          </div> */}
         </div>
       </footer>
     </>
